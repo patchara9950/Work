@@ -1,0 +1,7 @@
+{
+  "name": "Mywork",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
