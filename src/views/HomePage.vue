@@ -1,23 +1,33 @@
 <template>
   <div class="home-bg">
     <div class="home-page">
-      <h1>🎉 ยินดีต้อนรับสู่กิจกรรมที่🎓</h1>
-      <p> สำรวจกิจกรรมต่างๆ และค้นหาความหลงใหลของคุณ! </p>
-      <router-link to="/info">🔎 Learn More</router-link>
-      <router-link to="/contact">📬 Contact Us</router-link>
-      <router-link to="/register">📝 Register Now</router-link>
-      <div class="emoji-animate">🥳🌟🎈</div>
+      <h1>🎉 ยินดีต้อนรับสู่กิจกรรม <span>🎓</span></h1>
+      <p>สำรวจกิจกรรมต่างๆ และค้นหาความหลงใหลของคุณ!</p>
+      <div class="button-group">
+        <router-link to="/info" class="main-btn">🔍 Learn More</router-link>
+        <router-link to="/contact" class="main-btn">📬 Contact Us</router-link>
+        <router-link to="/register" class="main-btn">📝 Register Now</router-link>
+      </div>
+      <VisitorCounter />
+      <div class="emoji-animate">🥳✨🎈</div>
     </div>
   </div>
 </template>
 
+<script setup lang="ts">
+import VisitorCounter from '../components/VisitorCounter.vue'
+</script>
+
+
 <script lang="ts">
 import { defineComponent } from 'vue';
-
 export default defineComponent({
   name: 'HomePage',
 });
+import VisitorCounter from '../components/VisitorCounter.vue'
 </script>
+
+
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Prompt:wght@400;600&family=Mali:wght@700&display=swap');
